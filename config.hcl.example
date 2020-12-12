@@ -1,0 +1,18 @@
+project "sqlProject" {
+  dir = "/home/definitelyNotMyRealName/dev/sql-project"
+  sqlDir = "sql"
+  driver = "postgres"
+  host = "localhost"
+  username = "definitelyNotMyRealUsername"
+  password = "definitelyNotMyRealPassword"
+  database = "sqlproject"
+  port = 5432
+}
+
+project "otherProject" {
+  dir = "/home/definitelyNotMyRealName/dev/other-project"
+  sqlDir = "sql"
+  driver = "mysql"
+  username = "definitelyNotMyRealUsername"
+  password = "definitelyNotMyRealPassword"
+}

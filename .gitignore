@@ -1,0 +1,5 @@
+# GoLand .idea dir
+.idea/
+
+# The actual config, because that'd be silly.
+config.hcl
