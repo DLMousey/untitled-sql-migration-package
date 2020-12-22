@@ -39,8 +39,11 @@ func main() {
 		if x.Initialised {
 			fmt.Println("Project " + project.Name + " is initialised")
 		} else {
+			database.InitialiseDatabase(&project)
 			fmt.Println("Project " + project.Name + " is not initialised")
 		}
+
+		database.Migrate(&project)
 	}
 
 }
